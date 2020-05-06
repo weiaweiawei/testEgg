@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+</head>
+<body>
+    <h1><%= title  %></h1>
+    <p>我是<%= person.name %>，今年<%= person.age %>岁了</p>
+
+    <% list.forEach(item => { %>
+            <p> <%= item.name %>  </p>
+    <% })%>
+    
+
+    <%= htmlTags %>  
+    <%- htmlTags %>
+
+    <!-- =号会把h5标签给解析出来，减号不会解析h5标签 -->
+</body>
+</html>
